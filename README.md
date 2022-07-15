@@ -4,6 +4,7 @@
 
 ### Technologies Used
 * DBT
+* Python
 * SQL
 
 ### Description 
