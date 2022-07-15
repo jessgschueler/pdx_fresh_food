@@ -6,3 +6,4 @@ sources:
       - name: Grocery_Stores
       - name: Farmers_Markets
       - name: CSA_Farm_Dropoff
+      - name: Street_Trees
