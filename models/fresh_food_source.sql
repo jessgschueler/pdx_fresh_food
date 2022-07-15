@@ -6,7 +6,7 @@ with farmers_markets as (
         Farmers_Markets.sextant as sextant,
         Farmers_Markets.neighborhood as neighborhood,
 
-    FROM deb-01-346001.pdx_fresh_food.Farmers_Markets
+    from {{ source('pdx_fresh_food', 'Farmers_Markets') }}
 ),
 
 grocery_stores as (
@@ -17,7 +17,7 @@ grocery_stores as (
         Grocery_Stores.sextant as sextant,
         Grocery_Stores.neighborhood as neighborhood,
 
-    FROM deb-01-346001.pdx_fresh_food.Grocery_Stores
+    from {{ source('pdx_fresh_food', 'Grocery_Stores') }}
 ),
 
 csa_dropoff as (
@@ -28,7 +28,7 @@ csa_dropoff as (
         CSA_Farm_Dropoff.sextant as sextant,
         CSA_Farm_Dropoff.neighborhood as neighborhood,
 
-    FROM deb-01-346001.pdx_fresh_food.CSA_Farm_Dropoff
+    from {{ source('pdx_fresh_food', 'CSA_Farm_Dropoff') }}
 ),
 
 fresh_food_source as (
