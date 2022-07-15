@@ -2,8 +2,8 @@
 version: 2
 
 models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
+  - name: fresh_food_source
+    description: "Acombined list of fresh food sources in pdx
     columns:
       - name: id
         description: "The primary key for this table"
