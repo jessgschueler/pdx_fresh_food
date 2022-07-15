@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: pdx_fresh_food
+    tables:
+      - name: Grocery_Stores
+      - name: Farmers_Markets
+      - name: CSA_Farm_Dropoff
