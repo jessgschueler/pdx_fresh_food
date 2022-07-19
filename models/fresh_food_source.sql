@@ -1,3 +1,6 @@
+{{ config(materialized='table') }}
+
+
 with farmers_markets as (
     SELECT
         CONCAT('fm',Farmers_Markets.OBJECTID) as id,
@@ -32,6 +35,7 @@ csa_dropoff as (
 ),
 
 fresh_food_source as (
+
 SELECT *
   FROM farmers_markets
 
@@ -46,5 +50,4 @@ UNION ALL
    FROM csa_dropoff
 
 )
-
 select * from fresh_food_source

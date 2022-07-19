@@ -17,6 +17,9 @@ clean-targets:
   - "target"
   - "dbt_packages"
 models:
-  pdx_fresh_food:
+  fresh_food_sources:
     example:
-      +materialized: table
+      materialized: table
+  neighborhoods:
+    example:
+      materialized: table
